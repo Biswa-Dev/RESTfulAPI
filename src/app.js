@@ -1,6 +1,7 @@
 //requiring all the required packages
 const express = require("express");
 const bodyParser = require("body-parser");
+const validator = require('validator');
 const ejs = require("ejs");
 require("./db/conn"); //requiring db connection
 const mongoose = require("mongoose");
@@ -10,6 +11,8 @@ const port = process.env.PORT || 3000;
 
 //setting our app
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 const Category = require("./models/category.js");
 const Product = require("./models/product.js");
