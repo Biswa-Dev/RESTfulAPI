@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "4ca3214d-5fa8-43cd-be79-77eff7079579",
+		"name": "product-category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/read/Keyboard",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"read",
+						"Keyboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "producttId",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "productName",
+							"value": "Ukelele",
+							"type": "text"
+						},
+						{
+							"key": "qtyPerUnit",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "unitPrice",
+							"value": "20000",
+							"type": "text"
+						},
+						{
+							"key": "unitStock",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "discontinued",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "categoryName",
+							"value": "Music",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/create?producttId=9&productName=Ukelele&qtyPerUnit=5&unitPrice=20000&discontinued=false&categoryId=6&categoryName=Music",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create"
+					],
+					"query": [
+						{
+							"key": "producttId",
+							"value": "9"
+						},
+						{
+							"key": "productName",
+							"value": "Ukelele"
+						},
+						{
+							"key": "qtyPerUnit",
+							"value": "5"
+						},
+						{
+							"key": "unitPrice",
+							"value": "20000"
+						},
+						{
+							"key": "discontinued",
+							"value": "false"
+						},
+						{
+							"key": "categoryId",
+							"value": "6"
+						},
+						{
+							"key": "categoryName",
+							"value": "Music"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/readall",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"readall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "unitPrice",
+							"value": "22000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/update/Ukelele",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"Ukelele"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/delete/Ukelele",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"Ukelele"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
